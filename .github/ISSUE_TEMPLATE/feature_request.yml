@@ -1,0 +1,39 @@
+name: ✨ Feature request
+description: Suggest an idea or improvement.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping shape ClipPad! Please check the [roadmap](https://github.com/Maheshoo7/clippad#%EF%B8%8F-roadmap) and [existing issues](https://github.com/Maheshoo7/clippad/issues) first.
+
+        ClipPad aims to stay **invisible until summoned, private by default, keyboard-first and fast** — ideas that fit those principles are the easiest to say yes to.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      placeholder: I often copy several things in a row and have to open ClipPad once per item…
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: What would you like to happen?
+      description: Describe the feature from the user's point of view, including any keyboard shortcuts.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Workarounds, or how other apps handle this.
+
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contributing
+      options:
+        - label: I'd like to help build this.

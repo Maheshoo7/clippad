@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+src-tauri/target/
+src-tauri/gen/schemas/
+*.tsbuildinfo
+*.dmg
+
+# Test output
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment and secrets — never commit these
+.env
+.env.*
+!.env.example
+*.p12
+*.pem
+*.key
+
+# Editors and OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+.DS_Store
