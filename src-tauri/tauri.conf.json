@@ -56,7 +56,8 @@
     "shortDescription": "Open-source clipboard history manager",
     "longDescription": "ClipPad keeps everything you copy — text, links, code and images — and brings it back with one shortcut. Local-only, no accounts, no telemetry.",
     "macOS": {
-      "minimumSystemVersion": "10.15"
+      "minimumSystemVersion": "10.15",
+      "signingIdentity": "-"
     },
     "icon": [
       "icons/32x32.png",
