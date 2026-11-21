@@ -174,6 +174,7 @@ Good bug reports have:
 2. Move the `Unreleased` notes in [CHANGELOG.md](CHANGELOG.md) under the new version and date.
 3. Commit, then tag and push: `git tag v0.2.0 && git push origin v0.2.0`.
 4. The [Release workflow](.github/workflows/release.yml) builds Apple Silicon and Intel DMGs and creates a **draft** GitHub release. Review the notes and publish it.
+5. The [Homebrew tap](https://github.com/Maheshoo7/homebrew-tap) picks up the published release within six hours. To update it straight away: `gh workflow run update-clippad.yml --repo Maheshoo7/homebrew-tap`.
 
 ---
 

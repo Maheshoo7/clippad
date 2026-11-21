@@ -57,7 +57,15 @@ ClipPad quietly remembers **everything you copy** and brings it back the moment 
 
 ## 📦 Install
 
-### Download (recommended)
+### Homebrew (recommended)
+
+```sh
+brew install --cask maheshoo7/tap/clippad
+```
+
+Update later with `brew upgrade --cask clippad`. Then open ClipPad from Applications — and see the note below about the first launch.
+
+### Download
 
 1. Go to the [**latest release**](https://github.com/Maheshoo7/clippad/releases/latest).
 2. Download the DMG for your Mac:
@@ -163,7 +171,9 @@ Turn off **Launch at login** in ClipPad's Settings, or remove it in **System Set
 <details>
 <summary><b>How do I uninstall ClipPad completely?</b></summary>
 
-Quit ClipPad, drag it from Applications to the Bin, then delete `~/Library/Application Support/io.github.maheshoo7.clippad` to remove your history.
+If you installed with Homebrew, run `brew uninstall --zap --cask clippad` — it removes the app, your history and settings.
+
+Otherwise, quit ClipPad, drag it from Applications to the Bin, then delete `~/Library/Application Support/io.github.maheshoo7.clippad` to remove your history.
 </details>
 
 <details>
@@ -178,7 +188,8 @@ Not yet. ClipPad is built with Tauri, which runs on Windows and Linux, and parts
 - [ ] Paste as plain text
 - [ ] Ignore list for apps you never want recorded
 - [ ] Customisable global shortcut
-- [ ] Signed and notarised builds, plus a Homebrew cask
+- [x] Homebrew tap (`brew install --cask maheshoo7/tap/clippad`)
+- [ ] Signed and notarised builds, and a listing in the official Homebrew cask catalogue
 - [ ] Windows and Linux support
 
 Have an idea? [Open a feature request](https://github.com/Maheshoo7/clippad/issues/new/choose).
